@@ -35,7 +35,7 @@ jobs:
       with:
         tf_actions_version: 0.14.8
         tf_actions_subcommand: 'fmt'
-        tf_actions_working_dir: "./terraform"
+        tf_actions_working_dir: "./resourse"
 
     # Initialize a new or existing Terraform working directory by creating initial files, loading any remote state, downloading modules, etc.
     - name: 'Terraform Plan'
@@ -43,5 +43,5 @@ jobs:
       with:
         tf_actions_version: 0.14.8
         tf_actions_subcommand: 'plan'
-        tf_actions_working_dir: "./terraform"
+        tf_actions_working_dir: "./resourse"
 
