@@ -10,6 +10,7 @@ terraform {
         storage_account_name = "tfstorefile"
         container_name       = "tfstbackend01"
         key                  = "rgterraform.tfstate"
+        lock                 = "false"
     }
 
 }
