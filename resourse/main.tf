@@ -9,7 +9,7 @@ terraform {
         resource_group_name  = "terraform"
         storage_account_name = "tfstorefile"
         container_name       = "tfstbackend01"
-        key                  = "rgterraform.tfstate -lock=false"
+        key                  = "rgterraform.tfstate"
     }
 
 }
