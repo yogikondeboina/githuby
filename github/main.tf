@@ -22,3 +22,12 @@ resource "azurerm_resource_group" "state-demo-secure" {
   name     = "state-demo"
   location = "eastus"
 }
+
+module "storage_account" {
+  source = ".azservices/storageaccount"
+  location = var.location
+  resource_group = var.azurerm_resource_group
+  storage_name = var.azurerm_storage_account
+  resource_group_name = var.resource_group_name
+  azurem_storage_account = var.azurem_storage_account 
+}
